@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".MainActivity">
+
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Android 12 定位问题复现\n1. 点击'系统API定位'按钮进行定位 \n2. Android12系统无法获取结果，12以下正常  "
+    android:layout_marginBottom="20dp"
+    android:layout_gravity="center_horizontal"
+    />
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/id_res"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="定位结果:" />
+
+    <TextView
+      android:id="@+id/loc_result"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="20dp" />
+
+  </LinearLayout>
+
+  <Button
+    android:id="@+id/android_loc_req"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="系统API定位" />
+
+  <!--todo 暂时还不能用-->
+  <Button
+    android:visibility="gone"
+    android:id="@+id/gaode_loc_req"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="高德API定位" />
+
+</LinearLayout>
